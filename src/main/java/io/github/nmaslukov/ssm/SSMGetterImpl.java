@@ -1,3 +1,5 @@
+package io.github.nmaslukov.ssm;
+
 import com.amazonaws.services.simplesystemsmanagement.AWSSimpleSystemsManagement;
 import com.amazonaws.services.simplesystemsmanagement.model.GetParameterRequest;
 import com.google.common.cache.CacheBuilder;

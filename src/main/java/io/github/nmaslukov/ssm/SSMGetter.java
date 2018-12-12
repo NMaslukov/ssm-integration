@@ -1,3 +1,5 @@
+package io.github.nmaslukov.ssm;
+
 public interface SSMGetter {
 
 

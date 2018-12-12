@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.nmaslukov</groupId>
-    <artifactId>ssm-integration</artifactId>
+    <artifactId>ssm</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
@@ -18,7 +18,7 @@
 
     <name>ssm</name>
     <description>Easy ssm integration</description>
-    <url>https://github.com/NMaslukov/ssm-integration.git</url>
+    <url>https://github.com/NMaslukov/ssm-integration</url>
 
     <licenses>
         <license>
@@ -126,7 +126,7 @@
             <!--<version>1.6.7</version>-->
             <!--<extensions>true</extensions>-->
             <!--<configuration>-->
-                <!--<serverId>ssm-integration</serverId>-->
+                <!--<serverId>ossrh</serverId>-->
                 <!--<nexusUrl>https://oss.sonatype.org/</nexusUrl>-->
                 <!--<autoReleaseAfterClose>true</autoReleaseAfterClose>-->
             <!--</configuration>-->
