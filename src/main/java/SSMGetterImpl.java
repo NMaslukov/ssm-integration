@@ -31,7 +31,7 @@ public class SSMGetterImpl implements SSMGetter {
 
     /**
      *
-     * @param password
+     * @param password password for ssm
      * @return password from ssm
      */
     public String lookup(String password) {
