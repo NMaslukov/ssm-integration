@@ -7,6 +7,7 @@
     <groupId>me.exrt.services</groupId>
     <artifactId>ssm-integration</artifactId>
     <version>1.0</version>
+    <packaging>jar</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -14,6 +15,32 @@
         <java.version>1.8</java.version>
         <aws-java-sdk.version>1.11.433</aws-java-sdk.version>
     </properties>
+
+    <name>ssm</name>
+    <description>Easy ssm integration</description>
+    <url>https://github.com/NMaslukov/ssm-integration.git</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Nikita Maslukov</name>
+            <email>nikmaslukov@gmail.com</email>
+            <organization>org.github.NMaslukov</organization>
+            <organizationUrl>https://github.com/NMaslukov/ssm-integration</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/NMaslukov/ssm-integration.git</connection>
+        <developerConnection>scm:git:ssh://github.com:NMaslukov/ssm-integration.git</developerConnection>
+        <url>http://github.com/NMaslukov/ssm-integration/tree/master</url>
+    </scm>
 
     <dependencies>
         <dependency>
@@ -32,9 +59,26 @@
             <version>23.5-android</version>
         </dependency>
         <dependency>
-            <groupId>iota</groupId>
-            <artifactId>jota</artifactId>
-            <version>0.9.10</version>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.25</version>
         </dependency>
     </dependencies>
+
+    <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-source-plugin</artifactId>
+            <executions>
+                <execution>
+                    <id>attach-sources</id>
+                    <goals>
+                        <goal>jar</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+    </build>
 </project>

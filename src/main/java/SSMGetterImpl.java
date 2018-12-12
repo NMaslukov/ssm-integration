@@ -29,6 +29,11 @@ public class SSMGetterImpl implements SSMGetter {
                    }
             );
 
+    /**
+     *
+     * @param password
+     * @return password from ssm
+     */
     public String lookup(String password) {
         try {
             return customerCache.get(password);
